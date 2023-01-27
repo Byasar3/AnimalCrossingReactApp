@@ -12,7 +12,7 @@ const BugsContainer = () => {
             setBugs(data);
         }
         fetchData()
-    })
+    }, [])
 
     const bugComponents = bugs.map((bug) => {
         return <BugsComponent
