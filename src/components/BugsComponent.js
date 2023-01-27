@@ -2,7 +2,11 @@ const BugsComponent = ({bug}) => {
 
     return (
         <>
-        <li>{bug.name["name-EUen"]}</li>
+        
+        <li>
+            <img src={`${bug["icon_uri"]}`} alt="bug"/>
+            {bug.name["name-EUen"]}
+        </li>
         </>
     )
 }

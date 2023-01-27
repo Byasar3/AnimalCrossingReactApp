@@ -1,11 +1,23 @@
-const FishComponent = ({fish}, {fishIcon}) => {
+const FishComponent = ({fish}) => {
 
 
     
         return(
             <> 
-            <li> {fish.name["name-EUen"]}</li>
+
+
+            <div>             
+            <li> 
+                <img src={`${fish["icon_uri"]}`} alt="fish"/>
+                {fish.name["name-EUen"]}   
+                <button>Move to inventory</button>
+            </li>
+            </div>
+
+
             </>
+
+
         )
     }
     

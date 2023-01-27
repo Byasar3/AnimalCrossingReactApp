@@ -1,5 +1,6 @@
 import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
 import './App.css';
+import Navbar from './components/NavBarComponent';
 import FishContainer from './containers/FishContainer';
 import BugsContainer from './containers/BugsContainer';
 import SeaCreatureContainer from './containers/SeaCreaturesContainer';
@@ -8,16 +9,14 @@ function App() {
   return (
     <BrowserRouter>
     <div className="app">
-      <nav>
-        <h1>Animal Crossing: New Horizons Copendium</h1>
-        <li><Link to="/"> Homepage </Link></li>
-        <ul>
+      
+        <Navbar/>
+      <ul>
           <li><Link to="/FishContainer">Fish</Link></li>
           <li><Link to="/BugsContainer">Bugs</Link> </li>
           <li><Link to="/SeaCreaturesContainer">Sea Creatures</Link></li>
           <li>Fossils</li>
       </ul>
-      </nav>
 
       
 

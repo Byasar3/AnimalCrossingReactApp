@@ -2,7 +2,10 @@ const SeaCreatureComponent = ({seaCreature}) => {
 
     return (
         <>
-        <li>{seaCreature.name["name-EUen"]}</li>
+        <li>
+            <img src={`${seaCreature["icon_uri"]}`} alt="sea creature"/>
+            {seaCreature.name["name-EUen"]}
+        </li>
         </>
     )
 }
