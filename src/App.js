@@ -1,6 +1,7 @@
 import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
 import './App.css';
 import FishContainer from './containers/FishContainer';
+import BugsContainer from './containers/BugsContainer';
 
 function App() {
   return (
@@ -9,6 +10,12 @@ function App() {
       <nav>
         <h1>Animal Crossing: New Horizons Copendium</h1>
         <li><Link to="/"> Homepage </Link></li>
+        <ul>
+          <li><Link to="/FishContainer">Fish</Link></li>
+          <li><Link to="/BugsContainer">Bugs</Link> </li>
+          <li>Sea Creatures</li>
+          <li>Fossils</li>
+      </ul>
       </nav>
 
       
@@ -16,15 +23,11 @@ function App() {
 
       <Routes>
         <Route path="/FishContainer" element={<FishContainer/>}/>
+        <Route path="/BugsContainer" element={<BugsContainer/>}/>
       </Routes>
     </div>
     <div>
-      <ul>
-        <li><Link to="/FishContainer">Fish</Link></li>
-        <li>Bugs</li>
-        <li>Sea Creatures</li>
-        <li>Fossils</li>
-      </ul>
+
     </div>
     </BrowserRouter>
   );

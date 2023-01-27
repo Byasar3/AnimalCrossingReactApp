@@ -8,7 +8,7 @@ const FishContainer = () => {
 
     useEffect(() => {
         const fetchData = async () => {
-            const response = await fetch ("http://acnhapi.com/v1a/fish/");
+            const response = await fetch("http://acnhapi.com/v1a/fish/");
             const data = await response.json();
             setFishes(data);
         // console.log(data)
